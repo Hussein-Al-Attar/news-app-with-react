@@ -81,7 +81,8 @@ export default () => {
             </a>
           </div> */}
           <div className="row ">
-            {posts.map((post) => {
+            
+            {posts!=null? posts.map((post) => {
               return (
                 <div className=" col-12 col-md-4 col-sm-6" key={Math.random()}>
                   <div className="card m-1">
@@ -100,7 +101,7 @@ export default () => {
                   </div>
                 </div>
               );
-            })}
+            }):null}
           </div>
         </main>
       </section>
